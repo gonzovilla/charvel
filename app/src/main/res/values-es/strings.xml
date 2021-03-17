@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Charvel - Personajes de Marvel</string>
+    <string name="character_image_description">Fotografía del personaje</string>
+    <string name="refresh_button_description">Botón de recarga</string>
+    <string name="no_characters">No hay personajes disponibles</string>
+    <string name="appears_on">Aparece en:</string>
+    <string name="comics">Comics:</string>
+    <string name="series">Series:</string>
+    <string name="stories">Historias:</string>
+    <string name="events">Eventos:</string>
+    <string name="dialog_title">Algo ha salido mal</string>
+    <string name="load_data_error">Ha ocurrido un error al tratar de cargar los datos</string>
+    <string name="no_internet">Parece que no tienes conexión a Internet</string>
+    <string name="ok">Vale</string>
+</resources>

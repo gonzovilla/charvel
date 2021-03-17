@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Charvel - Characters from Marvel</string>
+    <string name="character_image_description">Picture of the character</string>
+    <string name="refresh_button_description">Refresh button</string>
+    <string name="no_characters">No characters available</string>
+    <string name="appears_on">Appears on:</string>
+    <string name="comics">Comics:</string>
+    <string name="series">Series:</string>
+    <string name="stories">Stories:</string>
+    <string name="events">Events:</string>
+    <string name="dialog_title">Something went wrong</string>
+    <string name="load_data_error">An error occurred trying to load the data</string>
+    <string name="no_internet">It appears you do not have an Internet connection</string>
+    <string name="ok">OK</string>
+</resources>

@@ -1,0 +1,38 @@
+{
+  "code": 200,
+  "status": "Ok",
+  "copyright": "© 2021 MARVEL",
+  "attributionText": "Data provided by Marvel. © 2021 MARVEL",
+  "attributionHTML": "<a href=\"http://marvel.com\">Data provided by Marvel. © 2021 MARVEL</a>",
+  "etag": "209610c3b20336958b68e2e6586ad677e74a0cff",
+  "data": {
+    "offset": 0,
+    "limit": 20,
+    "total": 1493,
+    "count": 20,
+    "results": [
+      {
+        "id": 1009144,
+        "name": "A.I.M.",
+        "description": "AIM is a terrorist organization bent on destroying the world.",
+        "modified": "2013-10-17T14:41:30-0400",
+        "thumbnail": {
+          "path": "http://i.annihil.us/u/prod/marvel/i/mg/6/20/52602f21f29ec",
+          "extension": "jpg"
+        },
+        "comics": {
+          "available": 49
+        },
+        "series": {
+          "available": 33
+        },
+        "stories": {
+          "available": 52
+        },
+        "events": {
+          "available": 0
+        }
+      }
+    ]
+  }
+}

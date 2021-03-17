@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="Text">
+        <item name="android:textSize">@dimen/text_size</item>
+    </style>
+
+    <style name="Text.SuperTitle" parent="@style/Text">
+        <item name="android:textSize">@dimen/text_size_huge</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="Text.Title" parent="@style/Text">
+        <item name="android:textSize">@dimen/text_size_big</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="Text.Subtitle" parent="@style/Text">
+        <item name="android:textSize">@dimen/text_size_big</item>
+        <item name="android:textStyle">italic</item>
+    </style>
+
+</resources>

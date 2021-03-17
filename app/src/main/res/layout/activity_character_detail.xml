@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/MainBackgroundColor"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/character_detail_padding"
+    tools:context=".ui.detail.CharacterDetailActivity">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.3" />
+
+    <ImageView
+        android:id="@+id/dImageView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/character_image_description"
+        app:layout_constraintEnd_toStartOf="@id/guideline"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:src="@drawable/ic_marvel_placeholder" />
+
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/guideline"
+        app:layout_constraintTop_toTopOf="@id/dImageView">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/dTextHolder"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingStart="@dimen/character_detail_text_holder_padding"
+            android:paddingEnd="@dimen/character_detail_text_holder_padding">
+
+            <TextView
+                android:id="@+id/dName"
+                style="@style/Text.SuperTitle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:text="Name of the character" />
+
+            <TextView
+                android:id="@+id/dDescription"
+                style="@style/Text.Subtitle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/character_detail_separation"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/dName"
+                tools:text="Description of the character" />
+
+            <TextView
+                android:id="@+id/dAppearsOn"
+                style="@style/Text.Title"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/character_detail_separation"
+                android:text="@string/appears_on"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/dDescription" />
+
+            <TextView
+                android:id="@+id/dComicsTitle"
+                style="@style/Text.Title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/character_detail_separation_small"
+                android:text="@string/comics"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/dAppearsOn" />
+
+            <TextView
+                android:id="@+id/dComics"
+                style="@style/Text.Subtitle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/character_detail_separation"
+                app:layout_constraintBottom_toBottomOf="@id/dComicsTitle"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/dComicsTitle"
+                app:layout_constraintTop_toTopOf="@id/dComicsTitle"
+                tools:text="0" />
+
+            <TextView
+                android:id="@+id/dSeriesTitle"
+                style="@style/Text.Title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/character_detail_separation_small"
+                android:text="@string/series"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/dComicsTitle" />
+
+            <TextView
+                android:id="@+id/dSeries"
+                style="@style/Text.Subtitle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/character_detail_separation"
+                app:layout_constraintBottom_toBottomOf="@id/dSeriesTitle"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/dSeriesTitle"
+                app:layout_constraintTop_toTopOf="@id/dSeriesTitle"
+                tools:text="0" />
+
+            <TextView
+                android:id="@+id/dStoriesTitle"
+                style="@style/Text.Title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/character_detail_separation_small"
+                android:text="@string/stories"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/dSeriesTitle" />
+
+            <TextView
+                android:id="@+id/dStories"
+                style="@style/Text.Subtitle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/character_detail_separation"
+                app:layout_constraintBottom_toBottomOf="@id/dStoriesTitle"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/dStoriesTitle"
+                app:layout_constraintTop_toTopOf="@id/dStoriesTitle"
+                tools:text="0" />
+
+
+            <TextView
+                android:id="@+id/dEventsTitle"
+                style="@style/Text.Title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/character_detail_separation_small"
+                android:text="@string/events"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/dStoriesTitle" />
+
+            <TextView
+                android:id="@+id/dEvents"
+                style="@style/Text.Subtitle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/character_detail_separation"
+                app:layout_constraintBottom_toBottomOf="@id/dEventsTitle"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/dEventsTitle"
+                app:layout_constraintTop_toTopOf="@id/dEventsTitle"
+                tools:text="0" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+    <ProgressBar
+        android:id="@+id/dProgressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
